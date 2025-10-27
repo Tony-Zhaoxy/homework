@@ -3,7 +3,7 @@
 **Date:** October 27 2025  
 **Files:**  
 - `Homework2_ZHAO.pdf` — Final report (Task 1 & Task 2)  
-- `Homework2_Colab.ipynb` / `Homework2 – Colab.pdf` — Python code and results  
+- `Homework2.ipynb` — Python code and results  
 
 ---
 
@@ -27,7 +27,7 @@ of a simply supported aluminum tube beam using an implicit Euler time-integratio
 ---
 
 ## 2 How to Run
-1. Open `Homework2_Colab.ipynb` in Google Colab or Jupyter.  
+1. Open `Homework2.ipynb` in Google Colab or Jupyter.  
 2. Run all cells.  
 3. Outputs:  
    - `Figure 1`: Time history of maximum deflection.  
