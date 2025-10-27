@@ -26,15 +26,6 @@
 
 ---
 
-### Key Results Summary
-
-| Quantity | Simulation | Theory (E–B) | Comment |
-|-----------|-------------|--------------|----------|
-| Steady deflection (2000 N) | 0.038 m | 0.038 m | Excellent agreement |
-| Nonlinearity onset P* | ≈ 7000 N | — | Geometric stiffening |
-
----
-
 ### How to Run
 1. Open `Homework2.ipynb`.  
 2. Run all cells.  
