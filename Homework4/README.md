@@ -1,47 +1,50 @@
-# Discrete Elastic Rod — Homework 4
+# Homework 4 — Discrete Elastic Rod (DER)
 
-This repository contains my full implementation of Homework 4 using the Discrete Elastic Rod (DER) model with implicit time integration.  
-The project is divided into three parts.
-
----
-
-## Part 1 — Dynamic Response
-
-Simulates the dynamic behavior of a helical rod under a characteristic load.
-
-Outputs:
-- End-node displacement vs. time  
-- Automatically detected steady-state displacement  
-- 3D rod snapshots at several time steps
+This repository contains my implementation of Homework 4 for the Discrete Elastic Rod (DER) model.  
+The project includes the full simulation code (Jupyter notebook) and the final written report (PDF).
 
 ---
 
-## Part 2 — Force–Displacement Curve (Logspace Sweep)
+## 📂 Files
 
-Force sweep from **0.01 F_char** to **0.5 F_char** using logarithmic spacing.  
-Steady state is detected using a small-variation criterion.
+### `Homework4_V4.ipynb`
+- Main notebook containing the full implementation for all three parts:
+  - **Part 1:** Dynamic response and steady-state detection  
+  - **Part 2:** Force–displacement sweep (logspace) and stiffness fitting  
+  - **Part 3:** Diameter sweep and comparison with the textbook formula  
+- Includes all simulation code, plotting functions, and generated figures.
 
-Outputs:
-- Force vs. displacement plot
-- Log–log scaling plot
-- Fitted stiffness value
+### `Homework4_ZHAO.pdf`
+- Final compiled report for Homework 4.  
+- Contains explanations, equations, figures, and analysis corresponding to all simulation results.
 
 ---
 
-## Part 3 — Diameter Sweep vs Textbook Prediction
+## ▶️ How to Run
 
-Tests the classic spring stiffness formula:
+1. Open the notebook:
+   Homework4_V4.ipynb
+3. Run all cells from top to bottom.
+4. All figures and results (Part 1–3) will be generated automatically.
 
-├── part1/ # Part 1 code
-├── part2/ # Part 2 code
-├── part3/ # Part 3 code
-├── report/ # Final PDF report
-└── README.md
+---
+
+## 📝 Requirements
+Python 3.9+
+numpy
+matplotlib
 
 
 ---
 
-## How to Run
+## 📄 Notes
 
-Run all simulations:
+- The notebook uses an implicit DER solver with stretch, bending, and twist terms.
+- Part 2 uses **logarithmic force sweep** and automatic **steady-state detection**.
+- Part 3 compares the simulated axial stiffness to the classical formula  
+  `k = G d^4 / (8 N D^3)`.
+
+---
+
+
 
