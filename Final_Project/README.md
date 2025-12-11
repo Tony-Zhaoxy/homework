@@ -1,57 +1,32 @@
-README
-Overview
+# MAE 263F Final Project – Flexible Ladder Simulation
 
-This repository contains the final project for MAE 263F – Dynamics & Control of Structures.
-The project simulates a flexible aerial ladder subjected to wind loading using an implicit Euler time integrator, including bending/stretching elasticity, Rayleigh damping, torsional base spring–damper, and distributed wind forces.
+This repository contains the final project for **MAE 263F Dynamics & Control of Structures**.  
+It models a flexible aerial ladder subjected to wind loading using an **implicit Euler solver** with bending/stretching elasticity and a torsional base spring–damper system.
 
-The final deliverables include:
+## Files
+- **Project_263F.ipynb** – Main simulation code implementing the ladder dynamics.  
+- **263F_Final_Report.pdf** – Full written report.  
+- **263F_Final_Presentation.pptx** – Presentation slides.
 
-Jupyter Notebook implementation (Project_263F.ipynb)
+## Highlights
+- Cosserat-style beam discretization (stretching + bending)
+- Newton–Raphson implicit integration
+- Base rotational spring–damper model
+- Distributed wind load based on Reynolds-number–dependent drag
+- Time histories and deformation snapshots for different wind speeds
 
-Final written report
+## How to Run
+1. Open `Project_263F.ipynb` in Jupyter/VSCode/Colab.  
+2. Run all cells to execute simulations (U = 5, 10, 15 m/s) and generate plots.
 
-Final presentation slides
-
-Files
-
-Project_263F.ipynb – Main simulation code implementing the dynamic ladder model. 
-
-Project_263F.ipynb - Colab
-
-263F_Final_Report.pdf – Complete written report.
-
-263F_Final_Presentation.pptx – Presentation slides used in class.
-
-Key Features
-
-Cosserat-style beam discretization (bending + stretching)
-
-Newton–Raphson implicit integration
-
-Base rotational spring–damper model
-
-Wind-induced distributed load using Reynolds-number-based drag model
-
-Time history outputs + ladder shape snapshots
-
-How to Run
-
-Open the notebook Project_263F.ipynb in Jupyter / VSCode / Colab.
-
-Run all cells to:
-
-Execute simulations for multiple wind speeds (5 / 10 / 15 m/s)
-
-Generate time-history plots
-
-Plot ladder deformation snapshots
-
-No additional dependencies are required beyond:
-
+Dependencies:
+```bash
 numpy
 matplotlib
 
+
 Author
 
-Tony Zhao – UCLA Mechanical & Aerospace Engineering
+Xiaoyang Zhao – UCLA MAE
+Shixuan Sun - UCLA MAE
 Final project for MAE 263F.
